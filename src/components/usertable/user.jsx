@@ -67,11 +67,12 @@ const UserTable = () => {
 
   return (
     <div className="user-table-wrapper">
-      <div className="container my-4 user-table-container">
+      <div className="container user-table-container">
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h2>Overview of Users</h2>
           <button className="btn btn-warning">Create Users</button>
+          <p className="text-muted">White label instance: 'Personal-Peak-360'</p>
         </div>
         <p className="text-muted">White label instance: 'Personal-Peak-360'</p>
 
@@ -110,7 +111,7 @@ const UserTable = () => {
 
         {/* User Table */}
         <div className="table-responsive">
-          <table className="table table-bordered align-middle">
+          <table className="table table-bordered align-middle text-center"> {/* Added 'text-center' class */}
             <thead className="table-light">
               <tr>
                 <th>
@@ -156,18 +157,7 @@ const UserTable = () => {
                       style={{ width: "40px" }}
                     />
                   </td>
-                  <td>
-                    {user.role.split(", ").map((r, i) => (
-                      <span
-                        key={i}
-                        className={`badge bg-${
-                          r === "Super-Admin" ? "danger" : "secondary"
-                        } me-1`}
-                      >
-                        {r}
-                      </span>
-                    ))}
-                  </td>
+                  <td>{user.role}</td> {/* Role displayed as plain text */}
                   <td>
                     <img
                       src={user.level}

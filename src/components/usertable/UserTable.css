@@ -10,5 +10,16 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
     padding: 20px; /* Optional padding */
 
+    .table thead th,
+.table tbody td {
+  vertical-align: middle; /* Ensures vertical alignment */
+  text-align: center; /* Ensures horizontal alignment */
+}
+
+.table th,
+.table td {
+  padding: 12px;
+}
+
   }
   

@@ -215,12 +215,6 @@ const KanbanBoard = () => {
           <button className="btn btn-success" onClick={handleOpenAddModal}>
             Add New
           </button>
-          <Link to="/users" className="btn btn-success">
-            User
-          </Link>
-          <Link to="/preregistration" className="btn btn-success">
-            Pre Registration
-          </Link>
         </div>
       </div>
       <div className="kanban-board">

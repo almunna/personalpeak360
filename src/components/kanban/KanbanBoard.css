@@ -1,0 +1,135 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 25px;
+  }
+  
+  .board {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .task-header {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    width: 95%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    padding: 15px;
+
+  }
+  
+  .avatar-group img {
+    border: 2px solid white;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .bg-danger {
+    background-color: #dc3545 !important;
+    color: white;
+  }
+  
+  .bg-warning {
+    background-color: #ffc107 !important;
+    color: black;
+  }
+  
+  .bg-success {
+    background-color: #28a745 !important;
+    color: white;
+  }
+  /* Ensure columns are evenly spaced */
+.row {
+    display: flex;
+    gap: 20px; /* Adds spacing between columns */
+  }
+  
+  /* Cards */
+
+  
+  /* Avatars */
+  .avatar-xs {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Adjust button */
+  .btn-success {
+    margin-right: 20px;
+  }
+  .kanban-column {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 400px;
+    min-width: 26vw;
+    flex: 0 0 300px; /* Adjust width of each column */
+    margin-right: 1rem;
+    display: inline-block;
+  }
+  .task-section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #495057;
+  }
+  .card {
+    cursor: grab;
+  }
+.kanban-board {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100vw; /* Full width of the viewport */
+    padding-bottom: 1rem;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  /* Position the dropdown in the lower-right corner of the card */
+.dropdown-lower-right {
+  position: absolute; /* Allows absolute positioning within the card */
+  bottom: 10px; /* Distance from the bottom edge of the card */
+  right: 10px; /* Distance from the right edge of the card */
+}
+
+/* Adjust the dropdown button */
+.card .btn-light {
+  padding: 0.5rem; /* Optional: Adjust padding for smaller button size */
+  border: none; /* Optional: Remove button border for a cleaner look */
+  box-shadow: none; /* Optional: Remove shadow */
+}
+
+/* Styling for the dropdown menu */
+.dropdown-menu {
+  min-width: 120px; /* Set minimum width for the dropdown */
+  font-size: 14px; /* Adjust font size */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle 3D effect */
+}
